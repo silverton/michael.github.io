@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<!-- CSP tests throwing errors http://validator.w3.org/ still beta --> 
+   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; frame-src 'self'" />
+   <meta http-equiv="X-Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; frame-src 'self'" />
+
+ <!-- The 'X-WebKit-CSP' headers are no longer supported. Please consider using the canonical 'Content-Security-Policy' header instead. --> 
+ <meta http-equiv="X-WebKit-CSP" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; frame-src 'self'" /> 
+
+   <title>Michael Silverton | Palo Alto, California</title>
+
+   <link rel="stylesheet" type="text/css" href="./home.css" />
+   <link rel="openid.delegate" href="https://silverton.myopenid.com/"/>
+   <link rel="openid.server" href="https://www.myopenid.com/server"/>
+
+<!-- m.s@g OLD analytics? -->
+   <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40975708-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- NEW analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40975708-1', 'palo-alto.ca.us');
+  ga('send', 'pageview');
+</script>
+
+<!-- Google Translate -->
+<meta name="google-translate-customization" content="22c4a3aaa9dd3f58-ae471b6ea2114576-g0bd9e2f88d7bd5ce-21"></meta>
+
+<!-- jQuery -->
+<script type="text/javascript" src="http://michael.silverton.palo-alto.ca.us/js/jquery-2.0.3.min.js"></script> 
+<!-- wonder if this will work? //
+<object type="text/javascript" data="//static.silverton.palo-alto.ca.us/js/jquery-2.0.3.min.js"></object>
+ // -->
+
+<!-- Knowls remote scripts OFF //
+<link href="http://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="http://aimath.org/knowl.js"></script>
+//-->
+
+<!-- Knowls local scripts ON -->
+<link href="knowlstyle.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="./js/knowl.js"></script>
+
+</head>
+<body>
+<!-- About my Odd Interstitial Art ... as if this will ever be read //
+The Web, it's surfaces, layers, protocols,
+interactions with it's content and inhabitants, 
+have been my tabla rasa, my canvas, my clay. 
+Whatever is here, whatever I've wrought, 
+is the only art and life I've known. 
+Interpret and judge as you will. If you had lived the life I lived, 
+you would have, by definition, done the same, exactly; 
+just as would I have mirrored your every thought and action, were our fates exchanged. 
+Multiple by 9 billion to approximate empathy for the world as we seem to know it. 
+Perhaps my keen awareness of such fundamentals, 
+juxtaposed by those living in utter denial of the same, 
+were at the root of misunderstanding and resentment toward me 
+in this flicker of time-space known as life on Earth. 
+It was all my fault. It was all your fault. 
+No one is without culpability or sin, some of us just admit that fact, 
+which has always infuriated those blinded by arrogance and steeped in denial. // -->
+
+<!-- 2103.09.18 Yes, _transclusion_ will yet find it's place and time; indeed it is here, in this very site ;-) http://www.aimath.org/knowlepedia/ 
+       "The American Institute of Mathematics (AIM) is pleased to introduce a new tool to the world of web pages—the knowl. 
+	   Like the familiar hyperlink, knowls can be used to provide relevant, supplementary information and are referenced from 
+	   within the body of a web page. But unlike the hyperlink, which simply takes you to a new web page, the knowl 
+	   conveniently serves up the information at your original location with the click of a mouse button. With a similar click, 
+	   the knowl then disappears.
+	   
+	   "The self-contained nature of knowls makes them useful in many different settings. They can be thought of as 
+	   'building blocks' that can be called upon when needed. I envision a time when the Internet has a repository of 
+	   such knowls, reliable and ready to be referenced anywhere." says David Farmer, Director of Programs at AIM.
+	   
+	   AND of course http://ted.hyperland.com/ 
+	   
+	   Yay, jquery 2.0.3 seems to fix transclusion in Chrome.
+-->
+
+<!-- gTranslate OFF //
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, gaTrack: true, gaId: 'UA-40975708-1'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+// End gTranslate OFF --> 
+
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+<!-- // Admob OFF 
+<script type="text/javascript">
+var admob_vars = {
+ pubid: 'a14e30294e6399c', // publisher id
+ bgcolor: '000000', // background color (hex)
+ text: 'FFFFFF', // font-color (hex)
+ test: true // test mode, set to false to receive live ads
+};
+</script>
+<script type="text/javascript" src="https://mmv.admob.com/static/iphone/iadmob.js"></script>
+// END AM OFF -->
+
+<div itemscope itemtype="https://schema.org/Person" name="Michael Silverton"></div>
+<!-- use manifest for cache, later <html lang="en" manifest="cache.mf" itemscope itemtype="https://schema.org/Person"> -->
+
+<div id="label">
+<div class="aligned-right">
+<a href="https://michael.silverton.palo-alto.ca.us/">https</a> | <a href="http://wiki.cacert.org/FAQ/BrowserClients" target="_blank">learn2cert</a><br />
+<a href="http://wiki.cacert.org/FAQ/BrowserClients" target="_blank"><img src="//michael.silverton.palo-alto.ca.us/images/cacert.supporter.png" alt="SSL by CAcert.org" width="72" height="22" style="border: 0px;" /></a>
+</div>
+ 
+<h2>Michael.Silverton.Palo-Alto.CA.us</h2>
+<hr />
+<p>Sorry I didn't write the story<br />in a handy little stack of glue and paper,<br />but wasn't this more fun? Or at least, less Gutenberg era?<br />He died broke, you know. Had it coming. <a href="http://bfi.org/about-fuller/big-ideas/world-game" target="_blank">World</a> Game <a href="https://en.wikipedia.org/wiki/Johannes_Gutenberg#Later_life" target="_blank">Hacker</a>.</p>
+<p><a href="http://www.catb.org/hacker-emblem/" target="_blank"><img src="//michael.silverton.palo-alto.ca.us/images/hacker.png" alt="hack culture" /></a></p>
+<p><a href="http://bitcoin.org/en/getting-starte
+d" target="_blank"><img src="//michael.silverton.palo-alto.ca.us/images/BC_Logo_
+.png" height="34" border="0" /></a> PSA: Safely recycle your worthless scrap bitcoin here:<br />
+<a href="bitcoin:1M5SQs2yEqK2rRY5WNu5LvYFAHCxUCNsHP">1M5SQs2yEqK2rRY5WNu5LvYFAHCxUCNsHP</a> </p>
+<p>for (ever) { hack.evolve.emerge(human_progress); }</p>
+<blockquote>"According to the Planck mission team, and based on the standard model of cosmology, the total mass &mdash; energy of the universe contains 4.9% ordinary matter, 26.8% dark matter and 68.3% dark energy. Currently, no proposed Theory of Everything has been widely accepted or verified" (Wikipedia).</blockquote>
+
+<p>Hence: however smart you or I think we are, the totality of humanity's collective intelligence to date understands, at best, less than 5% of WTF <em>is</em>. So, forgive me, you know, for questioning decrees of "the way things are," however humble or intimidating in origin.</p>
+
+<!-- <p><a href="https://branded.silverton.palo-alto.ca.us/" target="_top">.b.r.a.n.d.e.d. (BETA)</a></p> -->
+<p>The part where we both get a <a href="http://j.mp/EvernoteFREEmonth" target="_top">Free Month of Evernote Premium</a><br />or <a href="http://s.zip.cr/CHRAFLc" target="_blank">$25 of Zipcar driving</a> when you join, or <a href="https://uber.com/invite/uberize" target="_blank">$30 Uber credit</a> on your first ride.</p>
+
+<a href="#if_form" class="meta_pop" title="IF ..."><img src="//michael.silverton.palo-alto.ca.us/images/Venus.34x34.png" alt="venus" /></a>
+&nbsp;&nbsp;<a href="#notnew_form" class="meta_pop" title="It's not new ..."><img src="//michael.silverton.palo-alto.ca.us/images/Mars.HST.34x34.png" alt="mars" /></a>
+&nbsp;&nbsp;<a href="#bucky_form" class="meta_pop" title="The real news of our century ..."><img src="//michael.silverton.palo-alto.ca.us/images/Sun.34x34.png" alt="sun" /></a>
+&nbsp;&nbsp;<a href="#frack_form" class="meta_pop" title="Our cause ..."><img src="//michael.silverton.palo-alto.ca.us/images/Jupiter.34x34.png" alt="jupiter" /></a>
+&nbsp;&nbsp;<a href="#possiplex_form" class="meta_pop" title="There is too much to say and it goes in all directions ..."><img src="//michael.silverton.palo-alto.ca.us/images/Saturn.34x34.png" alt="saturn" /></a>
+&nbsp;&nbsp;<a href="#twitter_card" class="meta_pop" title="Somebody set us up the global brain ..."><img src="//michael.silverton.palo-alto.ca.us/images/Twitter_logo_white_34w.png" alt="twitter" /></a>
+
+<h3>Every Life Is Art &middot; We Are Infinite Canvas</h3>
+<p><a href="http://temporaryhuman.com/" target="_blank" title="We are all temporary, human.">Temporary Human</a>
+ | <a href="http://ApprehendingPostscarcity.blogspot.com" target="_blank" title="It's time to boot up the star trek economy. Not in the future. Right Now.">Apprehending Postscarcity</a>
+ | <a href="http://as.silverton.palo-alto.ca.us/" target="_blank" title="The mashup formerly known as the Open Mind Project.">AS</a><br />
+
+<a href="http://michael.silverton.palo-alto.ca.us/packets/" target="_blank" title="Dropped Packets of Consciousness.">Packets of Consciousness</a>
+  | <a href="http://metavalent.com/" target="_blank" title="Where do novel ideas come from and how do they percolate planet-wide to become accepted as default reality?">Substrate Independence</a><br />
+
+<a href="http://collaboration.silverton.palo-alto.ca.us/" target="_top" title="Pay What You Want."><strong>Collaboration</strong></a>
+ | <a href="http://contact.silverton.palo-alto.ca.us/" target="_top" title="The first hit is always free, right?">Contact</a>
+ | <a href="http://globalcognitiongroup.com" target="_blank" title="Someone set us up the Global Brain. Toward What End are we utilizing it?">Global Cognition Group</a><br /> 
+  
+<a href="http://EthernetTV.net/" target="_blank" title="Curiously curated content since 1999.">EthernetTV</a>  
+ | <a href="http://evernote.silverton.palo-alto.ca.us/" target="_blank" title="Evernote public notebook.">Open Evernote</a>
+ | <a href="http://deadpool.silverton.palo-alto.ca.us/" target="_blank" title="Ur own, personal #FailCon.">x-deadpool-x</a></p>
+ 
+ <div id="museo">
+<h3>Faded Memes Museum</h3>
+<p>We interrupt this <a href="http://wrongsingularity.silverton.palo-alto.ca.us/" target="_blank">#WrongSingularity</a> with <a href="http://j.mp/TowardWhatEnd" target="_blank">#TowardWhatEnd?</a></p>
+<p><a href="http://www.thecity2.org/" target="_blank">City 2.0</a> versus <a href="http://j.mp/UrbanNomads" target="_blank">#UrbanNomads</a> of Silicon Valley</p>
+<p><a href="http://j.mp/AbundanceAlgorithm" target="_blank" title="Abundance Algorithm">#AbundanceAlgorithm</a> v <a href="http://j.mp/WhatIsBasicIncome" target="_blank" title="What is #BasicIncome">#EndPoverty</a> | <a href="http://cognosphere.silverton.palo-alto.ca.us/" target="_blank" title="Toward a Relatively Productive Comparatively Coherent Cognosphere">#Cognosphere</a> v <a href="http://www.urbandictionary.com/define.php?term=egosphere" target="_blank">#Egosphere</a><br />
+<a href="http://j.mp/ToDreamTheImpossibleStream" target="_blank">To Dream The Impossible Stream</a> | <a href="http://j.mp/BeNobody" target="_blank" title="Nobody can change the world for the better. So Be Nobody.">#BeNobody</a></p>
+<p>&nbsp;</p>
+</div>
+
+<a href="#possiplex_form" class="meta_pop" title="There is too much to say and it goes in all directions ..."><img src="//michael.silverton.palo-alto.ca.us/images/Saturn.34x34.png" alt="saturn" /></a>
+&nbsp;&nbsp;<a href="#frack_form" class="meta_pop" title="Our cause ..."><img src="//michael.silverton.palo-alto.ca.us/images/Jupiter.34x34.png" alt="jupiter" /></a>
+&nbsp;&nbsp;<a href="#bucky_form" class="meta_pop" title="The real news of our century ..."><img src="//michael.silverton.palo-alto.ca.us/images/Sun.34x34.png" alt="sun" /></a>
+&nbsp;&nbsp;<a href="#notnew_form" class="meta_pop" title="It's not new ..."><img src="//michael.silverton.palo-alto.ca.us/images/Mars.HST.34x34.png" alt="mars" /></a>
+&nbsp;&nbsp;<a href="#if_form" class="meta_pop" title="IF ..."><img src="//michael.silverton.palo-alto.ca.us/images/Venus.34x34.png" alt="venus" /></a>
+&nbsp;&nbsp;<a href="#twitter_card" class="meta_pop" title="Somebody set us up the global brain ..."><img src="//michael.silverton.palo-alto.ca.us/images/Twitter_logo_white_34w.png" alt="twitter" /></a>
+
+<h3>IndieWeb Sandbox</h3>
+<p>What, <a href="http://silverton.palo-alto.ca.us/">rel ="me"</a> worry? Meh, nevermind; it's just a standard. <a href="http://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx" target="_blank">Pesky RFCs</a>.</p>
+
+<form action="http://indieauth.com/auth" method="get">
+  <label>IndieAuth</label>
+  <input type="text" name="me" placeholder="ur.indieauth.domain" />
+  <p><button type="submit">Make Haz Click</button></p>
+  <input type="hidden" name="redirect_uri" value="https://michael.silverton.palo-alto.ca.us/indieauth.html" />
+</form>
+
+<p>What is <a href="http://indiewebcamp.com/" target="_blank">IndieWeb</a>? It's how we fix the internets after YaGooBingFace tried for to borked it.</p>
+
+<hr />
+
+<a  href="https://encrypted.google.com/search?hl=en&q=%22michael%20silverton%22%20%22ethernet%20to%20the%20home%22"  target="_blank" title="Wayyy back ...">&larr; Ancient History</a>
+ | <a href="https://michael.silverton.palo-alto.ca.us/index.2010.php" target="_blank" title="Way back ...">2010</a>
+ | <a href="https://michael.silverton.palo-alto.ca.us/index.2011.php" target="_blank" title="Back ...">2011</a>
+ | <a href="http://futureofthefuture.us/" target="_blank" title="'The future of the future is the present.'">Post-Future Present Tense</a>
+ | <a href="https://michael.silverton.palo-alto.ca.us/packets/1828/" target="_blank" title="Please reload the prezi a couple of times if the cloud server is acting silly. Sorry for the inconvenience.">Adaptive Futuretechture &rarr;</a>
+
+ </div>
+
+<br />
+<br />
+
+<div id="capstone"></div>
+<div id="watermark">
+<p>&nbsp;</p>
+<a href="#news_pop" onmouseover="" class="meta_pop" title="This is The Voice ..."><img src="//michael.silverton.palo-alto.ca.us/images/colossus_logo-no-background.50pct.png" alt="colossus" /></a>
+</div>
+
+<!-- POPUP FORMS -->
+
+<!-- news pop -->
+<a href="#x" class="overlay" id="news_pop"></a>
+<div class="popup">
+<!-- Pop Title -->
+    <h2>[ The Web We Lost ]</h2>
+<!-- Pop Subtitle -->
+<h3>by Anil Dash</h3>
+<!-- Pop Content -->
+<div style="text-align: center;">
+<p>"In the early days of the social web, 
+there was a broad expectation that regular people might own their own identities by having their own websites, instead of 
+being dependent on a few big sites to host their online identity. In this vision, you would own your own domain name and 
+have complete control over its contents, rather than having a handle tacked on to the end of a huge company's site. This 
+was a sensible reaction to the realization that big sites rise and fall in popularity, but that regular people need an 
+identity that persists longer than those sites do.<br /><br />
+This isn't our web today. We've lost key features that we used to rely on, and worse, we've abandoned core values that 
+used to be fundamental to the web world. To the credit of today's social networks, they've brought in hundreds of 
+millions of new participants to these networks, and they've certainly <strong>made a small number of people rich</strong>.
+<br /><br />
+But they haven't shown the web itself the respect and care it deserves, as a medium which has enabled them to succeed. 
+And they've now narrowed the possibilities of the web for an entire generation of users who don't realize how much more 
+innovative and meaningful their experience could be." - <a knowl="https://michael.silverton.palo-alto.ca.us/knowls/the-web-we-lost.knowl">Anil Dash</a>
+</p>
+</div>
+    <a class="close" href="#close"></a>
+</div>
+<!-- //end news pop -->
+
+<!-- popup form 1 -->
+<a href="#x" class="overlay" id="if_form"></a>
+<div class="popup">
+    <h2>[ <a href="http://www.kipling.org.uk/poems_if.htm" target="_blank">IF</a> ]</h2>
+<div style="text-align: center;">
+    <p>"IF you can keep your head when all about you<br />
+Are losing theirs and blaming it on you,<br />
+If you can trust yourself when all men doubt you,<br />
+But make allowance for their doubting too;<br />
+If you can wait and not be tired by waiting,<br />
+Or being lied about, don't deal in lies,<br />
+Or being hated, don't give way to hating,<br />
+And yet don't look too good, nor talk too wise:<br />
+<br />
+If you can dream - and not make dreams your master;<br />
+If you can think - and not make thoughts your aim;<br />
+If you can meet with Triumph and Disaster<br />
+And treat those two impostors just the same;<br />
+If you can bear to hear the truth you've spoken<br />
+Twisted by knaves to make a trap for fools,<br />
+Or watch the things you gave your life to, broken,<br />
+And stoop and build 'em up with worn-out tools:<br />
+<br />
+If you can make one heap of all your winnings<br />
+And risk it on one turn of pitch-and-toss,<br />
+And lose, and start again at your beginnings<br />
+And never breathe a word about your loss;<br />
+If you can force your heart and nerve and sinew<br />
+To serve your turn long after they are gone,<br />
+And so hold on when there is nothing in you<br />
+Except the Will which says to them: 'Hold on!'<br />
+<br />
+If you can talk with crowds and keep your virtue,<br />
+' Or walk with Kings - nor lose the common touch,<br />
+if neither foes nor loving friends can hurt you,<br />
+If all men count with you, but none too much;<br />
+If you can fill the unforgiving minute<br />
+With sixty seconds' worth of distance run,<br />
+Yours is the Earth and everything that's in it,<br />
+And - which is more - you'll be a Man, my son!</p>
+</div>
+    <a class="close" href="#close"></a>
+</div>
+<!-- //end popup form 1 -->
+
+<!-- popup form 2 -->
+<a href="#x" class="overlay" id="notnew_form"></a>
+<div class="popup">
+    <h2>[ it's not new ]</h2>
+<div style="text-align: center;">
+    <p>"Tekkies think that electronic documents and the World Wide Web are
+something completely new and that they own it, exactly the way every
+generation of teenagers thinks they've invented sex and it's their
+secret. But it's not new and they don't own it.  Word processing and the
+World Wide Web are not intrinsically new.<br />They are literature.</p>
+<p>What is literature?  Literature is (among other things) the study and design of
+documents, their structure and connections.  Therefore today's
+electronic documents are literature, electronic literature, and the
+question is what electronic literature people really need. Electronic
+literature should belong to all the world, not just be hoarded by a
+priesthood, and it should do what people need in order to organize and
+present human ideas with the least difficulty in the richest possible
+form." - Ted Nelson, <a knowl="https://michael.silverton.palo-alto.ca.us/knowls/translit.knowl">Toward a Deep Electronic Literature</a>"</p>
+</div>
+    <a class="close" href="#close"></a>
+</div>
+<!-- //end popup form 2 -->
+
+<!-- popup form 3 -->
+<a href="#x" class="overlay" id="bucky_form"></a>
+<div class="popup">
+    <h2>[ old news ]</h2>
+<div style="text-align: center;">
+<p>
+"This is the real news of our century.<br /><br />
+It is highly feasible to take care of all of humanity<br />
+at a higher standard of living<br />
+than anybody has ever experienced or dreamt of.<br /><br />
+To do so without having anybody profit at the expense of another,<br />
+so that everybody can enjoy the whole earth.<br /><br />
+And it can all be done by 1985."<br /><br />
+- Buckminster Fuller, The World Game, 1971 (<a href="http://www.youtube.com/embed/jgfrvZ-SxPQ" target="_blank">watch</a>).
+</p>
+</div>
+    <a class="close" href="#close"></a>
+</div>
+<!-- //end popup form 3 -->
+
+<!-- popup form 4 -->
+<a href="#x" class="overlay" id="possiplex_form"></a>
+<div class="popup">
+    <h2>[ possiplex ]</h2>
+<div style="text-align: center;">
+    <p>
+"There is too much to say and it goes in all directions."<br />
+"My religion is human creativity and human freedom."<br />
+"Everything is possible, nothing is easy."<br />
+"I mistook a clear view for a short distance."<br />
+"Everything is deeply intertwingled."<br />
+- Ted Nelson,
+<a href="https://www.evernote.com/pub/silverton/evernote#b=e74a81ac-5020-4e90-81b8-795aaea3098c&n=3fe4353f-fc37-402d-a9c4-0f7e920a3a87" target="_blank" title="We stand on the shoulders of unknown giants.">Possiplex</a>
+</p>
+<p>"Ah, but a man's reach should exceed his grasp, or what's a Heaven
+for?" - Robert Browning</p>
+<p>We are <a href="http://dictionary.reference.com/browse/refractory" target="_blank">Refractory</a> | <a href="https://en.wikipedia.org/wiki/Cornucopian" target="_blank">Cornucopian</a></p>
+</div>
+    <a class="close" href="#close"></a>
+</div>
+<!-- //end popup form 4 -->
+
+<!-- popup form 5 -->
+<a href="#x" class="overlay" id="frack_form"></a>
+<div class="popup">
+    <h2>[ our cause ]</h2>
+<div style="text-align: center;">
+    <p>"Human progress is our cause,<br />
+Liberty of thought our supreme wish,<br />
+Freedom of conscience our mission,<br />
+And the guarantee of equal rights<br />
+To all people everywhere our ultimate goal."
+<br />
+- Scottish Rite Creed
+</p>
+<p><a
+href="http://activitystream.silverton.palo-alto.ca.us"
+target="_blank">life is but a stream ...</a></p></div>
+    <a class="close" href="#close"></a>
+</div>
+<!-- //end popup form 5 -->
+
+<!-- popup form 6 DISABLED -->
+<!-- OFF //
+<a href="#x" class="overlay" id="square_up"></a>
+<div class="popup">
+    <h2>[ quicken the quest. amplify the awesome. ]</h2>
+<p>Thank you for empowering people to live full and meaningful lives dedicated to online content creation, curation, experimentation, engagement, discovery, social media value add, art, & activism.</p>
+<div style="text-align: center;">
+<div class="product"><input value="Content creation, curation, engagement, discovery, social media value add, art, activism." class="product-title" type="hidden">
+<select class="product-attr-custom"><option googlecart-set-product-price="10010.01" value="Catalyst">Catalyst: 10010.01</option><option googlecart-set-product-price="1011.01" value="Achiever">Achiever: 1011.01</option><option googlecart-set-product-price="888.88" value="Doer">Doer: 888.88</option><option googlecart-set-product-price="404.04" value="Helper">Helper: 404.04</option><option googlecart-set-product-price="255.54" value="Supporter">Supporter: 255.54</option><option selected="selected" googlecart-set-product-price="101.01" value="Friend">Friend: 101.01</option><option googlecart-set-product-price="51.50" value="Follower">Follower: 51.50</option></select><input value="10010.01" class="product-price" type="hidden">
+<div title="Add to cart" role="button" tabindex="0" class="googlecart-add-button"></div></div>
+<br />
+// OFF -->
+
+<!-- Google Cart DISCONTINUED -->
+<!-- OFF 
+<script  id='googlecart-script' type='text/javascript' src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=265924176972485' integration='jscart-wizard' post-cart-to-sandbox='false' currency='USD' productWeightUnits='LB'></script> 
+// OFF -->
+<!-- //End Google Cart -->
+
+<!-- OFF //
+</div>
+    <a class="close" href="#close"></a>
+</div>
+// OFF -->
+
+<!-- //end popup form 6 OFF -->
+
+<!-- popup form 7 -->
+<a href="#x" class="overlay" id="twitter_card"></a>
+<div class="popup">
+    <h2>[ #alreadygone ]</h2>
+<p>Twitter card test pending two week approval process. fail = 2; hack = 3;</p>
+<div style="text-align: center;">
+
+<meta name="twitter:card" content="player">
+<meta name="twitter:site" content="@silverton">
+<meta name="twitter:creator" content="@silverton">
+<meta name="twitter:title" content="#AlreadyGone">
+<meta name="twitter:description" content="Awe. Ready. Gone.">
+<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/-yia37Nh1ZRE/UZg7HUr16pI/AAAAAAAAOTY/juuGXnq7eDY/s530-no/internet.brain.OpteProject.4000x4000.jpg">
+<meta name="twitter:player" content="https://michael.silverton.palo-alto.ca.us/#twitter_card">
+<meta name="twitter:player:stream" content="https://michael.silverton.palo-alto.ca.us/video/alreadygone.mp4">
+<meta name="twitter:player:stream:content_type" content="video">
+<meta name="twitter:player:height" content="315">
+<meta name="twitter:player:width" content="420">
+<meta name="twitter:domain" content="michael.silverton.palo-alto.ca.us">
+<meta name="twitter:app:name:iphone" content="">
+<meta name="twitter:app:name:ipad" content="">
+<meta name="twitter:app:name:googleplay" content="">
+<meta name="twitter:app:url:iphone" content="">
+<meta name="twitter:app:url:ipad" content="">
+<meta name="twitter:app:url:googleplay" content="">
+<meta name="twitter:app:id:iphone" content="">
+<meta name="twitter:app:id:ipad" content="">
+<meta name="twitter:app:id:googleplay" content="">
+
+</div>
+    <a class="close" href="#close"></a>
+</div>
+<!-- //end popup form 7 -->
+
+<!-- // END POPUP FORMS -->
+
+<!-- FOOTER -->
+<div id="footer">
+National Strategy for Trusted Identities in Cyberspace (<a href="http://www.nist.gov/nstic/" title="National Strategy for Trusted Identities in Cyberspace" target="_blank">NSTIC</a>)
+<br />
+<a href="http://www.dreamhost.com/donate.cgi?id=5225" target="_blank">Be the awesome. Donate direct to web hosting bills. It really helps a lot.</a>
+</div>
+
+<!-- // Adsense Mobile OFF 
+<script type="text/javascript">
+
+<COMMENT THIS SECTION WHEN LIVE: FROM HERE ...  
+  // XHTML should not attempt to parse these strings, declare them CDATA.
+  /* <![CDATA[ */
+  window.googleAfmcRequest = {
+    client: 'ca-mb-pub-1640665942302807',
+    format: '320x50_mb',
+    output: 'html',
+    slotname: '3960828520',
+  };
+  /* ]]> */
+
+// COMMENT WHEN LIVE: ... TO HERE>
+
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_afmc_ads.js"></script>
+ // END ASM OFF -->
+ 
+<!-- Piwik --> 
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://michael.silverton.palo-alto.ca.us/piwik/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "1"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<!-- // If no Javascript -->
+<noscript>
+<!-- Piwik Image Tracker -->
+<img src="https://michael.silverton.palo-alto.ca.us/piwik/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+<!-- End Piwik Image Tracker-->
+</noscript>
+<!-- End Piwik -->
+
+
+
+<!-- //End Piwik Tracking Code -->
+
+
+<!-- Mozilla Persona JS -->
+<script src="https://login.persona.org/include.js"></script>
+<!-- //End Mozilla Persona JS -->
+
+<!-- IndieWebifcation -->
+   <a rel="me" href="https://twitter.com/silverton" />&nbsp;</a>
+   <a rel="me" href="https://silverton.myopenid.com/" />&nbsp;</a>
+   <!-- Meh, not yet I guess <a rel="me" href="https://en.wikipedia.org/wiki/Michael_Silverton" />&nbsp;</a> -->
+   <!-- Meh, not yet I guess <a rel="me" href="https://linkedin.com/in/michaelsilverton"/>&nbsp;</a> -->
+   <a rel="me" href="https://github.com/silverton" />&nbsp;</a>
+   <a rel="me" href="https://geoloqi.com/silverton" />&nbsp;</a>
+   
+</body>
+</html>
