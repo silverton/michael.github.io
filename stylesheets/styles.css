@@ -297,8 +297,6 @@ footer a {
 }
 footer p {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 footer p + p {
   float: right;
