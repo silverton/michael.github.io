@@ -302,6 +302,21 @@ footer p + p {
   float: right;
 }
 
+postscript {
+width: 640px;
+margin: 0 auto;
+padding: 20px 0 0;
+color: #555;
+overflow: hidden;
+}
+postscript a {
+color: #800;
+font-weight: bold;
+}
+postscript p {
+text-align: center;
+}
+
 @media print, screen and (max-width: 740px) {
   body {
     padding: 0;
