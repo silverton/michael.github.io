@@ -296,6 +296,7 @@ footer a {
   font-weight: bold;
 }
 footer p {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
