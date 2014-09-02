@@ -296,12 +296,11 @@ footer a {
   font-weight: bold;
 }
 footer p {
-  float: left;
-  padding: 0px 0px 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer p + p {
   float: right;
-  padding: 0px 20px 0px 0px;
 }
 
 @media print, screen and (max-width: 740px) {
