@@ -4,4 +4,5 @@ i'm old. so at this point, the exercise is reduced to seeing if i can create an 
 
 btw, if you can find the usenet archives, you'll discover that ICANN was almost named INDRA (i might have been silverton@shaolin.stanford.edu at the time; or maybe it was earlier) anyway, INDRA, the name i created and advocated because of the obviously cool (to me, anyway) metaphysical overlap with the engineering leadership body that was never supposed to become "owned" by any clique, but always open to public participation and guidance, was not to be. Internet Named Domain Registration Authority (INDRA) was out voted by the hard science crowd. you know, the ones who claim to have it all figured out with their glorious Standard Model which explains a grand total of about 5% of WTF. obviously, the scientific method is the best we've found so far for explicating WTF, but with 95% left to figure out, it might be justifiable to keep an open mind for new avenues of inquiry, wouldn't you think?
 
-<small>[1] how quaint, right?</small>
+<hr />
+[1] how quaint, right?
