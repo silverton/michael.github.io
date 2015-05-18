@@ -4,11 +4,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="stylesheets/styles.css">
-<link rel="stylesheet" href="stylesheets/pygment_trac.css">
-<link rel="stylesheet" href="knowlstyle.css"> 
-
+<link rel="stylesheet" href="../stylesheets/styles.css">
+<link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+<link rel="stylesheet" href="../knowlstyle.css">
 <script src="javascripts/scale.fix.js"></script>
 <!-- jQuery -->
 <script type="text/javascript" src="http://michael.silverton.palo-alto.ca.us/js/jquery-2.0.3.min.js"></script>
@@ -21,37 +19,33 @@
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
 </head>
-
-<title>IndieWeb, Webmentions, Microformat, Federations, and such</title>
+<title></title>
 <body>
 <div class="wrapper">
 <header>
-<h1>it's indiewebirific!</h1>
+<h1>send webmentions</h1>
 <small>
-indieweb, webmention, microformats, federation, and such
+without breaking the mentionweb
 </small>
 </header>
 <section>
-<p>string, sealing wax, & fancy stuff: <a href="http://indiewebify.me/" target="_blank">IndieWebify.me</a>, <a href="http://indiewebify.me/" target="_blank">Webmention.io</a>, <a href="http://indiewebcamp.com" target="_blank">IndieWebCamp</a>, <a href="http://indiewebcamp.com/comment" target="_blank">POSSE & Comments</a>, <a href="http://microformats.org/" target="_blank">microformats</a></p>
-<h3>hello indiewebworld</h3>
-<p>zero boring excuses for taking this long to at least participate as a beta-monkey.</p>
-<ul>
-<li>super grateful for the work of <a href="http://indiewebcamp.com/webmention#IndieWeb_implementations" target="_blank">The Great Ones</a> for implementing the principles
-<li>need to <a href="https://github.com/converspace/webmention/blob/master/README.md" target="_blank">get into the spec</a> and do this right
-<li>in the meantime, looks like webmention.io is a nice starting point, once i have a username, can add HTML tags for rel=pingback & rel=webmention
-
-<!-- Get username from webmention.io first
-    <link rel="pingback" href="http://webmention.io/username/xmlrpc" />
-    <link rel="webmention" href="http://webmention.io/username/webmention" />
--->
-<li>Or, start something like a minimally viable <a href="http://michael.silverton.palo-alto.ca.us/indieweb/">micro-pub endpoint</a>.
-</ul>
-</section>
-<section>
-<!-- form borrowed from http://indiewebify.me/send-webmentions/ ... will return after testing. thx! -->
-    	<form class="row" action="/send-webmentions/" method="get">
+<p>Learning by doing, with great thanks to the faculty of IndieWeb Multiversity: This page forked from http://indiewebify.me/send-webmentions/</p>
+	<h2>Sending <a href="http://webmention.org" target="_blank">WebMentions</a> to other IndieWeb sites</h2>
+	
+	<p>When you reply to something on another indieweb site, or mention someone with an indieweb site, sending a webmention lets them know they’ve been linked to.</p>
+	
+	<p>Sending webmentions allows you to write replies to other content and participate in cross-site conversations.</p>
+	
+	<ul>
+		<li>Send webmentions and pingbacks manually using the form below</li>
+		<li>Send webmentions from the command line <a href="http://indiewebcamp.com/webmention#How_to_Test_Webmentions">using Curl</a> or <a href="https://github.com/vrypan/webmention-tools">webmention-tools</a></li>
+		<li>Make your publishing software send webmentions for you automatically using one of the <a href="http://indiewebcamp.com/webmention#Implementations">open source libraries</a></li>
+		<li>Or, get down and dirty with the <a href="http://webmention.org">WebMention spec</a> and implement it yourself</li>
+	</ul>
+	
+	<p>On the wiki: <a href="http://indiewebcamp.com/webmention">webmention</a></p>
+	<form class="row" action="/send-webmentions/" method="get">
 		<div class="span4">
 			<input class="span4" type="text" value="" name="url" placeholder="http://yoursite.com" />
 		</div>
@@ -118,13 +112,14 @@ indieweb, webmention, microformats, federation, and such
 			});
 		});
 	}($));
-</script>
+</script>	
 </section>
+<section>&nbsp;</section>
 <footer>
 <navbar>
-<p style="text-align: center;"><a href="http://michael.silverton.palo-alto.ca.us">.home.</a> | <strong>.indieweb.</strong> | <a href="http://michael.silverton.palo-alto.ca.us/pitch.html">.how2pitch.</a></p>
+<p style="text-align: center;"><a href="http://michael.silverton.palo-alto.ca.us">.home.</a> | <a href="http://michael.silverton.palo-alto.ca.us/indieweb.html">.indieweb.</a> | <a href="http://michael.silverton.palo-alto.ca.us/pitch.html">.how2pitch.</a></p>
 </navbar>
-<footer>
+</footer>
 </div>
 </body>
-</html>
+</html>  
