@@ -1,1 +1,3 @@
 User-agent: *
+Sitemap: 
+http://michael.silverton.palo-alto.ca.us/sitemap.xml
