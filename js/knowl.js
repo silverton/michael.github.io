@@ -86,7 +86,7 @@ function knowl_click_handler($el) {
     $knowl.hide();
     // DRG: inline code
     if ($el.attr("class") == 'internal') {
-      $output.html($el.attr("value"));
+      $output.html($el.attr(&quot;value&quot;));
       $knowl.hide();
       $el.addClass("active");
       if(window.MathJax == undefined) {
