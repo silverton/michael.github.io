@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v3.6.4
+ * jQuery JavaScript Library v3.7.0
  * https://jquery.com/
  *
  * Includes Sizzle.js
@@ -151,7 +151,7 @@ function toType( obj ) {
 
 
 var
-	version = "3.6.4",
+	version = "3.7.0",
 
 	// Define a local copy of jQuery
 	jQuery = function( selector, context ) {
