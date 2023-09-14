@@ -27,8 +27,8 @@ body {
 .align-left-div-80pct {
     width: 80%;
 	margin: 0 auto;
-    margin-left: 13px;
-    text-align: left; /* This centers the text inside the div */
+	padding: 5px 5px;
+    text-align: left;
 }
 
 .wrapper {
