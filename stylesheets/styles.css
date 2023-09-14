@@ -24,6 +24,12 @@ body {
   color: #222;
 }
 
+.centered-div-80pct {
+    width: 80%;
+    margin: 5px auto;
+    text-align: left; /* This centers the text inside the div */
+}
+
 .wrapper {
   width: 640px;
   margin: 0 auto;
