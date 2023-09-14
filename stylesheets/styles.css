@@ -24,9 +24,10 @@ body {
   color: #222;
 }
 
-.centered-div-80pct {
+.align-left-div-80pct {
     width: 80%;
-    margin: 5px auto;
+	margin: 0 auto;
+    margin-left: 13px;
     text-align: left; /* This centers the text inside the div */
 }
 
